@@ -16,7 +16,6 @@ mongoose.connect(
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => console.log("database connected")
 );
-// mongoose.connect("mongodb://localhost:27017/weather-app",{useNewUrlParser:true,useUnifiedTopology: true},()=>console.log("database connected"))
 
 app.use("/signup", signup);
 app.use("/login", login);
