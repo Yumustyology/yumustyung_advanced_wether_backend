@@ -1,4 +1,4 @@
-## Hello there,
+<!-- ## Hello there,
 My name is Yusuf Mustahan and I am a software engenineer with years of  experience in both frontend and backend programming. I will potray myself as a frontend and backend balanced programmer, showing that I am very verstaile with working on any programming stack for the organization. As been earlier instructed to declare the stack of interest which I would love to 
 
 
@@ -107,4 +107,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) --> -->
