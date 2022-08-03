@@ -6,13 +6,13 @@ const signup = require("./routes/signup.route");
 const login = require("./routes/login.route");
 const authToken = require("./middleware/authToken");
 const refreshToken = require("./routes/refreshToken.route");
-
+require("dotenv/config")
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 mongoose.connect(
-  "mongodb+srv://yumustyung:yumustyung@cluster0.aa6bi.mongodb.net/weatherApp?retryWrites=true&w=majority",
+  process.env.DB_CONNECT_URI,
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => console.log("database connected")
 );
