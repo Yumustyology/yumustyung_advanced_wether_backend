@@ -37,13 +37,13 @@ router.post(
                 // generate accesToken for user
                 const accessToken = await JWT.sign(
                   { email },
-                  "YUMUSTYUNGWEATHERAPPSALT",
+                  process.env.ACCESS_TOKEN_SECRET,
                   { expiresIn: "10s" }
                 );
                 // generate refresh token for user
                 const refreshToken = await JWT.sign(
                   { email },
-                  "YUMUSTYUNGWEATHERAPPREFRESHTOKENSALT",
+                  process.env.REFRESH_TOKEN_SECRET,
                   { expiresIn: "24h" }
                 );
                 res.status(201).json({

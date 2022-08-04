@@ -16,11 +16,11 @@ if(!refreshToken){
     })
 }else{
     try {
-        const user = await JWT.verify(refreshToken,"YUMUSTYUNGWEATHERAPPREFRESHTOKENSALT")
+        const user = await JWT.verify(refreshToken,process.env.REFRESH_TOKEN_SECRET)
         const {email} = user
-        console.log(email);
-        const accessToken = await JWT.sign({email},"YUMUSTYUNGWEATHERAPPSALT",{expiresIn:"10s"})
-        console.log("new access ",accessToken);
+        // console.log(email);
+        const accessToken = await JWT.sign({email},process.env.ACCESS_TOKEN_SECRET,{expiresIn:"10s"})
+        // console.log("new access ",accessToken);
         res.status(201).json({
             accessToken
         })
